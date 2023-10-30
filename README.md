@@ -76,6 +76,9 @@ aws_secret_access_key = <your-secret-access-key>
 
 Depending on your setup, you may need to create the `~/.aws` directory and the `credentials` file inside of your local environment.
 
+1. [Local WP](https://localwp.com/): No special setup is needed. `wp snapshots` commands run as your Mac user. Create the folder `.aws` in your user's home directory, and the `credentials` file within that directory. 
+2. [10up/wp-local-docker-v2](https://github.com/10up/wp-local-docker-v2): Special setup is eneded. `wp snapshots` runs inside the Docker container as the user `www-data`. Follow the instructions in this issue to make your credentials available when you run `10updocker wp snapshots`: https://github.com/10up/wp-local-docker-v2/issues/352
+
 More information in [AWS documentation](https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_credentials_profiles.html).
 
 #### Option 2: Environment Variables
